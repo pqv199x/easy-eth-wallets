@@ -1,0 +1,43 @@
+{
+  "name": "easy-eth-wallets",
+  "version": "0.1.0",
+  "description": "Interact with TomoChain wallets easily",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pqv199x/easy-eth-wallets.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server ./src/index.js",
+    "dist": "webpack",
+    "release": "webpack && npm publish"
+  },
+  "author": "Vu Q. Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pqv199x/easy-eth-wallets/issues"
+  },
+  "homepage": "https://github.com/pqv199x/easy-eth-wallets",
+  "keywords": [
+    "tomochain",
+    "ethereum",
+    "javascript",
+    "wallet",
+    "vupq",
+    "software-wallet"
+  ],
+  "dependencies": {
+    "@ledgerhq/hw-app-eth": "^4.68.4",
+    "@ledgerhq/hw-transport-u2f": "^4.68.4",
+    "ethereumjs-util": "^6.1.0",
+    "hdkey": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.39.2",
+    "@babel/core": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "ethereumjs-tx": "^1.3.7",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
