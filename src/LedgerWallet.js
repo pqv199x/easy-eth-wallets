@@ -73,7 +73,7 @@ export default class LedgerWallet extends GenericWallet {
         if (v.length < 2) {
             v = '0' + v
         }
-        
+
         const result = '0x' + signature['r'] + signature['s'] + v
         return result
     }
@@ -95,7 +95,7 @@ export default class LedgerWallet extends GenericWallet {
                     signature[key] = '0x' + signature[key]
                 }
             }
-            
+
             const tx = new Transaction({ ...txParams, ...signature })
 
             return stringified ? `0x${tx.serialize().toString('hex')}` : tx
