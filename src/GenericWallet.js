@@ -8,7 +8,11 @@ export default class GenericWallet {
 
     }
 
-    getAddress() {
+    getAddresses() {
+
+    }
+
+    getAddress () {
 
     }
 

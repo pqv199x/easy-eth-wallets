@@ -49,7 +49,7 @@ export default class LedgerWallet extends GenericWallet {
         }
     }
 
-    getAddress() {
+    getAddresses() {
         let wallets = []
         let convertedAddress
         for (let i = this.offset; i < this.numberWallets; i++) {
@@ -57,6 +57,14 @@ export default class LedgerWallet extends GenericWallet {
             wallets.push(convertedAddress)
         }
         return wallets
+    }
+
+    getAddress() {
+        if (!this.defaultAddress) {
+            throw new Error('Default not set')
+        } else {
+            return this.defaultAddress
+        }
     }
 
     async setDefaultAddress(index) {

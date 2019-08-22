@@ -1,6 +1,6 @@
 {
   "name": "easy-eth-wallets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Interact with TomoChain wallets easily",
   "main": "dist/index.js",
   "repository": {
@@ -30,7 +30,8 @@
     "@ledgerhq/hw-app-eth": "^4.68.4",
     "@ledgerhq/hw-transport-u2f": "^4.68.4",
     "ethereumjs-util": "^6.1.0",
-    "hdkey": "^1.1.1"
+    "hdkey": "^1.1.1",
+    "trezor-connect": "^7.0.3"
   },
   "devDependencies": {
     "webpack": "^4.39.2",
