@@ -1,6 +1,6 @@
 {
   "name": "easy-eth-wallets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Interact with TomoChain wallets easily",
   "main": "dist/index.js",
   "repository": {
