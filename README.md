@@ -1,6 +1,15 @@
 # Interact with TomoChain wallets easily
 
 
+## Install
+```javascript
+npm i --save easy-eth-wallets
+```
+or
+```javascript
+yarn add easy-eth-wallets
+```
+
 ## Ledger Wallet
 ```javascript
 import { LedgerWallet } from  'easy-eth-wallets'
