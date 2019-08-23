@@ -34,4 +34,17 @@ const signMessageSig = await wallet.signMessage('This is message')
 const signTransactionSig = await wallet.signTransaction(txParams, stringified)
 ```
 stringified variable(Boolean) is using for returning result (string(signature) or object tx)
-
+Sample txParams:
+```javascript
+{
+  from: '0x7314e0f1c0e28474bdb6be3e2c3e0453255188f8'
+  to: "0x7314e0f1c0e28474bdb6be3e2c3e0453255188f8",
+  value: "0xf4240",
+  data: "0x01",
+  chainId: 1,
+  nonce: "0x0",
+  gas: "0x5208",
+  gasLimit: "0x5208",
+  gasPrice: "0xbebc200"
+}
+```
